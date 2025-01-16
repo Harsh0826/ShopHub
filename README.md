@@ -1,4 +1,4 @@
-# MERN Ecommerce
+# ShopHub
 
 ## Description
 
@@ -17,19 +17,13 @@ An ecommerce store built with MERN stack, and utilizes third party API's. This e
   * Redux to manage application's state
   * Redux Thunk middleware to handle asynchronous redux actions
 
-## Demo
-
-This application is deployed on Vercel Please check it out :smile: [here](https://mern-store-gold.vercel.app).
-
-See admin dashboard [demo](https://mernstore-bucket.s3.us-east-2.amazonaws.com/admin.mp4)
-
 ## Docker Guide
 
 To run this project locally you can use docker compose provided in the repository. Here is a guide on how to run this project locally using docker compose.
 
 Clone the repository
 ```
-git clone https://github.com/mohamedsamara/mern-ecommerce.git
+git clone https://github.com/Harsh0826/ShopHub.git
 ```
 
 Edit the dockercompose.yml file and update the the values for MONGO_URI and JWT_SECRET
@@ -59,7 +53,7 @@ npm run seed:db [email-***@****.com] [password-******] // This is just an exampl
 Some basic Git commands are:
 
 ```
-git clone https://github.com/mohamedsamara/mern-ecommerce.git
+git clone https://github.com/Harsh0826/ShopHub.git
 cd project
 npm install
 ```
@@ -73,9 +67,6 @@ Create `.env` file for both client and server. See examples:
 [Backend ENV](server/.env.example)
 
 
-## Vercel Deployment
-
-Both frontend and backend are deployed on Vercel from the same repository. When deploying on Vercel, make sure to specifiy the root directory as `client` and `server` when importing the repository. See [client vercel.json](client/vercel.json) and [server vercel.json](server/vercel.json).
 
 ## Start development
 
@@ -96,23 +87,4 @@ npm run dev
 - [Webpack](https://webpack.js.org/)
 
 
-### Code Formatter
-
-- Add a `.vscode` directory
-- Create a file `settings.json` inside `.vscode`
-- Install Prettier - Code formatter in VSCode
-- Add the following snippet:  
-
-```json
-
-    {
-      "editor.formatOnSave": true,
-      "prettier.singleQuote": true,
-      "prettier.arrowParens": "avoid",
-      "prettier.jsxSingleQuote": true,
-      "prettier.trailingComma": "none",
-      "javascript.preferences.quoteStyle": "single",
-    }
-
-```
 
